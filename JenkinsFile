@@ -1,10 +1,22 @@
 pipeline {
     agent any
+    tools{
+     nodejs "node"
+    }
 
     stages {
-        stage('Hello') {
+        stage('clone') {
             steps {
-                echo 'Hello World '
+                 git 'https://github.com/Ekimutai/gallery'
+
+
+            }
+        }
+       
+        stage('Dependencies') {
+            steps {
+                sh "npm install"
+
 
             }
         }
