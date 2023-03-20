@@ -11,6 +11,12 @@ pipeline {
                  git 'https://github.com/Ekimutai/gallery'
 
 
+
+            }
+        }
+        stage('Build'){
+            steps{
+                echo 'Build successful'
             }
         }
        
