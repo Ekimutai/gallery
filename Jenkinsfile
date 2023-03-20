@@ -9,9 +9,6 @@ pipeline {
         stage('clone') {
             steps {
                  git 'https://github.com/Ekimutai/gallery'
-
-
-
             }
         }
         stage('Build'){
