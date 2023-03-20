@@ -19,6 +19,10 @@ pipeline {
                 echo 'Build successful'
             }
         }
+        stage('Tests'){
+            steps {
+                sh 'npm test'}
+        }
        
         stage('Dependencies') {
             steps {
